@@ -44,11 +44,14 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 return self.async_create_entry(title=info["title"], data=user_input)
 
         captcha_url = "https://service.szgas.com.cn/login/kaptcha-image.jspx"
+        description_placeholders = {
+            "captcha_image": f'<img src="{captcha_url}" alt="Captcha Image">'
+        }
         return self.async_show_form(
             step_id="user", 
             data_schema=STEP_USER_DATA_SCHEMA, 
             errors=errors,
-            description_placeholders={"captcha_url": captcha_url}
+            description_placeholders=description_placeholders
         )
 
 class CannotConnect(HomeAssistantError):
