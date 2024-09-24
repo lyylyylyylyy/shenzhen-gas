@@ -48,7 +48,9 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             step_id="user", 
             data_schema=STEP_USER_DATA_SCHEMA, 
             errors=errors,
-            description_placeholders={"captcha_url": captcha_url}
+            description_placeholders={
+                "captcha_image": f'<img src="{captcha_url}" alt="验证码" />'
+            },
         )
 
 class CannotConnect(HomeAssistantError):
