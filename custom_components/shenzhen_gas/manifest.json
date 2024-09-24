@@ -1,0 +1,14 @@
+{
+  "domain": "shenzhen_gas",
+  "name": "Shenzhen Gas",
+  "config_flow": true,
+  "documentation": "https://github.com/lyylyylyylyy/shenzhen-gas",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": ["@lyylyylyylyy"],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0"
+}
