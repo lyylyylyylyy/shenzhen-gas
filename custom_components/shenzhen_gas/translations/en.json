@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Shenzhen Gas Account Setup",
+        "description": "Please enter your Shenzhen Gas account information and the captcha.\n\n{captcha_image}",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "captcha": "Captcha"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}
