@@ -7,7 +7,8 @@
         "data": {
           "username": "用户名",
           "password": "密码",
-          "captcha": "验证码"
+          "captcha": "验证码",
+          "refresh_captcha": "刷新验证码"
         }
       }
     },
